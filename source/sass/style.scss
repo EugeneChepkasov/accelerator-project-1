@@ -2,3 +2,12 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// Общие стили
+@import "./variables.scss";
+@import "common/fonts.scss";
+@import "common/global.scss";
+@import "common/visually-hidden.scss";
+
+// Блоки сайта
+// @import "blocks/header.scss";
