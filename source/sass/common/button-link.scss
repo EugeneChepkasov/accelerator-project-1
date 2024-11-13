@@ -1,0 +1,14 @@
+.button-link {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: inherit;
+  text-align: center;
+  padding: 22px 22px;
+  width: 206px;
+  max-height: 66px;
+  border: 2px solid $base-text-color;
+  box-sizing: border-box;
+}

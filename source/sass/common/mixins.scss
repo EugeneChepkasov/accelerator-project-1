@@ -1,0 +1,9 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin text-gradient {
+background: linear-gradient(128deg, #d10a42 0%, #0041cf 45.58%);
+}
