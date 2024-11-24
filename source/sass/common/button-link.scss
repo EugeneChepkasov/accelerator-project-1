@@ -10,5 +10,23 @@
   width: 206px;
   max-height: 66px;
   border: 2px solid $base-text-color;
-  box-sizing: border-box;
+}
+
+.button-link:hover {
+  background-color: $bg-base-color;
+  color: $primary-text-color;
+}
+
+.button-link:active {
+  color: $default-text-color;
+}
+
+.button-link:focus-visible {
+  background-color: rgba($color: $bg-base-color, $alpha: 0.8);
+  border: 2px solid $default-text-color;
+  color: $primary-text-color;
+}
+
+.button-link:disabled {
+  opacity: 50%;
 }

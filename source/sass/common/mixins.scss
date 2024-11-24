@@ -7,3 +7,15 @@
 @mixin text-gradient {
 background: linear-gradient(128deg, #d10a42 0%, #0041cf 45.58%);
 }
+
+@mixin bloks-padding {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}

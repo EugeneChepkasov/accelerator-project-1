@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPERGYM</title>
+  <title>Supergym</title>
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
@@ -24,14 +24,11 @@
 </head>
 
 <body class="page-body">
+  <h1 class="visually-hidden">Supergym. Фитнес центр в Омске</h1>
   <section class="hero" data-test="hero">
     <div class="hero__wrap container">
       <div class="hero__header">
-        <picture>
-          <source media="(min-width: 1366px)" srcset="img/images/logo-supergym-desktop.svg" width="130" height="26">
-          <source media="(min-width: 768px)" srcset="img/images/logo-supergym-tablet.svg" width="110" height="22">
-          <img src="img/images/logo-supergym-mobile.svg" width="100" height="20" alt="Логотип SUPERGYM">
-        </picture>
+        <img class="hero__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="Логотип SUPERGYM">
         <a class="hero__phone" href="tel:+78005555555">8 800 555-55-55</a>
       </div>
       <div class="hero__body">
@@ -43,21 +40,68 @@
           </ul>
           <div class="hero__titles">
             <p class="hero__subtitle title">Омск</p>
-            <H1 class="hero__main-title">Фитнес центр</H1>
+            <p class="hero__main-title">Фитнес центр</p>
             <a href="#" class="hero__button button-link">Купить абонемент</a>
           </div>
         </div>
         <div class="hero__image">
           <picture>
-            <source media="(min-width: 1366px)" srcset="img/images/hero-img-desktop@1x.jpg" width="500" height="524">
-          <img src="img/images/hero-img-tablet@1x.jpg" alt="Тренер клуба SUPERGYM" width="324" height="390">
-        </picture>
+            <source media="(min-width: 1366px)" type="image/webp"
+              srcset="img/images/hero-img-desktop@1x.webp 1x, img/images/hero-img-desktop@2x.webp 2x" width="500"
+              height="524">
+            <source media="(min-width: 1366px)"
+              srcset="img/images/hero-img-desktop@1x.jpg 1x, img/images/hero-img-desktop@2x.jpg 2x" width="500"
+              height="524">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/images/hero-img-tablet@1x.webp 1x, img/images/hero-img-tablet@2x.webp 2x" width="324"
+              height="390">
+            <img src="img/images/hero-img-tablet@1x.jpg" srcset="img/images/hero-img-tablet@2x.jpg 2x"
+              alt="Тренер клуба SUPERGYM" width="324" height="390">
+          </picture>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="about container" data-test="about">
+    <div class="about__description">
+      <h2 class="about__title title">Тренажёрный зал</h2>
+      <h3 class="about__subtitle subtitle">Просторный зал площадью 900 кв/м</h3>
+      <p class="about__text">Supergym — самый большой фитнес центр<br> за Уралом и идеальное место для укрепления<br>
+        тела и
+        здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br> для всех спортсменов.</p>
+      <p class="about__add-text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в
+        фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+    </div>
 
+    <div class="about__img">
+      <picture>
+        <source media="(min-width: 1366px)"
+          srcset="img/images/main-img-desktop@1x.jpg 1x, img/images/main-img-desktop@2x.jpg 2x" width="660"
+          height="400">
+        <source media="(min-width: 768px)"
+          srcset="img/images/main-img-tablet@1x.jpg 1x, img/images/main-img-tablet@2x.jpg 2x" width="678" height="345">
+        <img src="img/images/main-img-mobile@1x.jpg" srcset="img/images/main-img-mobile@2x.jpg 2x"
+          alt="Интерьер спортзала" width="320" height="280">
+      </picture>
+    </div>
+
+    <div class="about__video video">
+      <div class="video__wrap">
+        <picture>
+          <source media="(min-width: 1366px)"
+            srcset="img/images/video-cover-desktop@1x.jpg 1x, img/images/video-cover-desktop@2x.jpg 2x" width="360"
+            height="230">
+          <source media="(min-width: 768px)"
+            srcset="img/images/video-cover-tablet@1x.jpg 1x, img/images/video-cover-tablet@2x.jpg 2x" width="270"
+            height="170">
+          <img class="video__media" src="img/images/video-cover-mobile@1x.jpg"
+            srcset="img/images/video-cover-mobile@2x.jpg 2x" width="320" height="170" alt="Познакомьтесь с нашим залом">
+        </picture>
+        <button class="video__button" type="button" aria-label="Запустить видео"></button>
+      </div>
+    </div>
+  </section>
 
 
   <!-- пример использования спрайта -->
@@ -66,7 +110,6 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
   <!-- примеры требуемых атрибутов data-test="*" -->
-  <div data-test="about">about</div>
   <div data-test="price">price</div>
   <div data-test="games">games</div>
   <div data-test="juri">juri</div>
