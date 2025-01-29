@@ -13,19 +13,17 @@
 
   <link rel="stylesheet" href="sass/style.scss">
 
-  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-800.woff2" type="font/woff2" as="font" crossorigin>
-  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-300.woff2" type="font/woff2" as="font"
-    crossorigin>
-  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" type="font/woff2" as="font"
-    crossorigin>
-  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" type="font/woff2" as="font"
-    crossorigin>
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin>
 </head>
 
 <body class="page-body">
   <h1 class="visually-hidden">Supergym. Фитнес центр в Омске</h1>
   <section class="hero" data-test="hero">
+    <h2 class="visually-hidden">Самое главное о Supergym</h2>
     <div class="hero__wrap container">
       <div class="hero__header">
         <img class="hero__logo" src="img/images/logo-supergym.svg" width="100" height="20" alt="Логотип SUPERGYM">
@@ -41,7 +39,7 @@
           <div class="hero__titles">
             <p class="hero__subtitle title">Омск</p>
             <p class="hero__main-title">Фитнес центр</p>
-            <a href="#" class="hero__button button-link">Купить абонемент</a>
+            <a href="#price" class="hero__button button">Купить абонемент</a>
           </div>
         </div>
         <div class="hero__image">
@@ -52,7 +50,8 @@
             <source media="(min-width: 1366px)"
               srcset="img/images/hero-img-desktop@1x.jpg 1x, img/images/hero-img-desktop@2x.jpg 2x" width="500"
               height="524">
-            <source media="(min-width: 768px)" type="image/webp"
+
+            <source type="image/webp"
               srcset="img/images/hero-img-tablet@1x.webp 1x, img/images/hero-img-tablet@2x.webp 2x" width="324"
               height="390">
             <img src="img/images/hero-img-tablet@1x.jpg" srcset="img/images/hero-img-tablet@2x.jpg 2x"
@@ -63,55 +62,167 @@
     </div>
   </section>
 
-  <section class="about container" data-test="about">
-    <div class="about__description">
-      <h2 class="about__title title">Тренажёрный зал</h2>
-      <h3 class="about__subtitle subtitle">Просторный зал площадью 900 кв/м</h3>
-      <p class="about__text">Supergym — самый большой фитнес центр<br> за Уралом и идеальное место для укрепления<br>
-        тела и
-        здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br> для всех спортсменов.</p>
-      <p class="about__add-text">В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в
-        фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
-    </div>
+  <section class="about" data-test="about">
+    <div class="about__wrap container">
+      <div class="about__description">
+        <h2 class="about__title title">Тренажёрный зал</h2>
+        <div class="about__subtitle subtitle">Просторный зал площадью 900 кв/м</div>
+        <p>Supergym – самый большой фитнес центр<br> за Уралом и идеальное место для укрепления<br>
+          тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием<br> для всех спортсменов.
+        </p>
+        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в
+          фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+      </div>
 
-    <div class="about__img">
-      <picture>
-        <source media="(min-width: 1366px)"
-          srcset="img/images/main-img-desktop@1x.jpg 1x, img/images/main-img-desktop@2x.jpg 2x" width="660"
-          height="400">
-        <source media="(min-width: 768px)"
-          srcset="img/images/main-img-tablet@1x.jpg 1x, img/images/main-img-tablet@2x.jpg 2x" width="678" height="345">
-        <img src="img/images/main-img-mobile@1x.jpg" srcset="img/images/main-img-mobile@2x.jpg 2x"
-          alt="Интерьер спортзала" width="320" height="280">
-      </picture>
-    </div>
-
-    <div class="about__video video">
-      <div class="video__wrap">
+      <div class="about__img">
         <picture>
+          <source media="(min-width: 1366px)" type="image/webp"
+            srcset="img/images/gym-img-desktop@1x.webp 1x, img/images/gym-img-desktop@2x.webp 2x" width="660"
+            height="400">
+          <source media="(min-width: 768px)" type="image/webp"
+            srcset="img/images/gym-img-tablet@1x.webp 1x, img/images/gym-img-tablet@2x.webp 2x" width="678"
+            height="345">
+          <source type="image/webp" srcset="img/images/gym-img-mobile@1x.webp 1x, img/images/gym-img-mobile@2x.webp 2x"
+            width="320" height="280">
+
           <source media="(min-width: 1366px)"
-            srcset="img/images/video-cover-desktop@1x.jpg 1x, img/images/video-cover-desktop@2x.jpg 2x" width="360"
-            height="230">
+            srcset="img/images/gym-img-desktop@1x.jpg 1x, img/images/gym-img-desktop@2x.jpg 2x" width="660"
+            height="400">
           <source media="(min-width: 768px)"
-            srcset="img/images/video-cover-tablet@1x.jpg 1x, img/images/video-cover-tablet@2x.jpg 2x" width="270"
-            height="170">
-          <img class="video__media" src="img/images/video-cover-mobile@1x.jpg"
-            srcset="img/images/video-cover-mobile@2x.jpg 2x" width="320" height="170" alt="Познакомьтесь с нашим залом">
+            srcset="img/images/gym-img-tablet@1x.jpg 1x, img/images/gym-img-tablet@2x.jpg 2x" width="678" height="345">
+          <img src="img/images/gym-img-mobile@1x.jpg" srcset="img/images/gym-img-mobile@2x.jpg 2x"
+            alt="Интерьер спортзала" width="320" height="280">
         </picture>
-        <button class="video__button" type="button" aria-label="Запустить видео"></button>
+      </div>
+
+      <div class="about__video video">
+        <div class="video__wrap">
+          <picture>
+            <source media="(min-width: 1366px)" type="image/webp"
+              srcset="img/images/video-cover-desktop@1x.webp 1x, img/images/video-cover-desktop@2x.webp 2x" width="360"
+              height="230">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/images/video-cover-tablet@1x.webp 1x, img/images/video-cover-tablet@2x.webp 2x" width="270"
+              height="170">
+            <source type="image/webp"
+              srcset="img/images/video-cover-mobile@1x.webp 1x, img/images/video-cover-mobile@2x.webp 2x" width="320"
+              height="170">
+
+            <source media="(min-width: 1366px)"
+              srcset="img/images/video-cover-desktop@1x.jpg 1x, img/images/video-cover-desktop@2x.jpg 2x" width="360"
+              height="230">
+            <source media="(min-width: 768px)"
+              srcset="img/images/video-cover-tablet@1x.jpg 1x, img/images/video-cover-tablet@2x.jpg 2x" width="270"
+              height="170">
+            <img class="video__media" src="img/images/video-cover-mobile@1x.jpg"
+              srcset="img/images/video-cover-mobile@2x.jpg 2x" width="320" height="170"
+              alt="Познакомьтесь с нашим залом">
+          </picture>
+          <button class="video__button" type="button" aria-label="Запустить видео"></button>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="price" data-test="price" id="price">
+    <div class="price__wrap container">
+      <h2 class="price__title title">Абонементы</h2>
+      <ul class="price__tabs">
+        <li class="price__tabs-item">
+          <label class="price__tab-lable price__tab-lable--checked" for="oneMonth" tabindex="0">
+            <input class="visually-hidden" id="oneMonth" type="radio" name="tab-btn" value="" tabindex="-1">
+            1 месяц</label>
+        </li>
+        <li class="price__tabs-item">
+          <label class="price__tab-lable" for="sixMonth" tabindex="0">
+            <input class="visually-hidden" id="sixMonth" type="radio" name="tab-btn" value="" tabindex="-1">
+            6 месяцев</label>
+        </li>
+        <li class="price__tabs-item">
+          <label class="price__tab-lable" for="twelveMonth" tabindex="0">
+            <input class="visually-hidden" id="twelveMonth" type="radio" name="tab-btn" value="" tabindex="-1">
+            12 месяцев</label>
+        </li>
+      </ul>
+
+      <ul class="price__list">
+        <li class="price__list-item" tabindex="-1">
+          <article class="price__article">
+            <h3 class="price__small-title small-title">С тренером</h3>
+            <p class="price__description" id="lessons-amount">12 занятий</p>
+            <p class="price__number" id="lessons-price" data-price="5000">5000</p>
+            <a href="#" class="price__button button">Купить абонемент</a>
+          </article>
+        </li>
+        <li class="price__list-item" tabindex="-1">
+          <article class="price__article">
+            <h3 class="price__small-title small-title">Дневной</h3>
+            <p class="price__description">с 8:00 до 17:00</p>
+            <p class="price__number" id="daytime-price" data-price="1700">1700</p>
+            <a href="#" class="price__button button">Купить абонемент</a>
+          </article>
+        </li>
+        <li class="price__list-item" tabindex="-1">
+          <article class="price__article">
+            <h3 class="price__small-title small-title">Полный день</h3>
+            <p class="price__description">с 8:00 до 22:00</p>
+            <p class="price__number" id="fullday-price" data-price="2700">2700</p>
+            <a href="#" class="price__button button">Купить абонемент</a>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="games" data-test="games">
+    <div class="games__wrap container">
+      <div class="games__description">
+        <h2 class="games__title title">Super<br> games</h2>
+        <dl class="games__info">
+          <dt class="games__info-title">Дата</dt>
+          <dd class="games__info-detailes">
+            <time class="games__time" datetime="2019-03-07">7 <span class="games__time-desc">Марта<br>
+                2019</span></time>
+          </dd>
+          <dt class="games__info-title">Время</dt>
+          <dd class="games__info-detailes">
+            <time class="games__time" datetime="2019-03-07 12:00">12:00</time>
+          </dd>
+        </dl>
+        <p class="games__subtitle">Ежегодные соревнования<br> по CrossFit</p>
+        <a href="#" class="games__button button">Заполнить заявку</a>
+      </div>
+
+      <picture>
+        <source media="(min-width: 1366px)" type="image/webp"
+          srcset="img/images/games-photo_desktop@1x.webp 1x, img/images/games-photo_desktop@2x.webp 2x" width="660"
+          height="500">
+        <source media="(min-width: 768px)" type="image/webp"
+          srcset="img/images/games-photo_tablet@1x.webp 1x, img/images/games-photo_tablet@2x.webp 2x" width="378"
+          height="348">
+        <source type="image/webp"
+          srcset="img/images/games-photo_mobile@1x.webp 1x, img/images/games-photo_mobile@2x.webp 2x" width="290"
+          height="290">
+
+        <source media="(min-width: 1366px)"
+          srcset="img/images/games-photo_desktop@1x.jpg 1x, img/images/games-photo_desktop@2x.jpg 2x" width="660"
+          height="500">
+        <source media="(min-width: 768px)"
+          srcset="img/images/games-photo_tablet@1x.jpg 1x, img/images/games-photo_tablet@2x.jpg 2x" width="378"
+          height="348">
+        <img class="games__img" src="img/images/games-photo_mobile@1x.jpg"
+          srcset="img/images/games-photo_mobile@2x.jpg 2x" alt="Спортсмен отжимается" width="290" height="290">
+      </picture>
+    </div>
+  </section>
 
   <!-- пример использования спрайта -->
   <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
+
   <!-- примеры требуемых атрибутов data-test="*" -->
-  <div data-test="price">price</div>
-  <div data-test="games">games</div>
   <div data-test="juri">juri</div>
   <div data-test="features">features</div>
   <div data-test="offers">offers</div>

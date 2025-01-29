@@ -12,8 +12,13 @@ const loadVideo = () => {
   videoContainer.append(iframe);
 };
 
-const videoAboutHandler = () => {
+const loadVideoOnClick = () => {
   videoButton.addEventListener('click', loadVideo);
+  videoButton.addEventListener('keydowun', (evt) => {
+    if (evt.key === 'Enter') {
+      loadVideo();
+    }
+  });
 };
 
-export {videoAboutHandler};
+export {loadVideoOnClick};

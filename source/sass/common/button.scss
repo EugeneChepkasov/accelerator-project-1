@@ -1,32 +1,29 @@
-.button-link {
+.button {
   display: block;
   font-size: 12px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 18px;
   text-transform: uppercase;
-  color: inherit;
   text-align: center;
-  padding: 22px 22px;
-  width: 206px;
-  max-height: 66px;
-  border: 2px solid $base-text-color;
+  padding: 22px;
 }
 
-.button-link:hover {
+
+.button:hover {
   background-color: $bg-base-color;
   color: $primary-text-color;
 }
 
-.button-link:active {
+.button:active {
   color: $default-text-color;
 }
 
-.button-link:focus-visible {
+.button:focus-visible {
   background-color: rgba($color: $bg-base-color, $alpha: 0.8);
   border: 2px solid $default-text-color;
   color: $primary-text-color;
 }
 
-.button-link:disabled {
+.button:disabled {
   opacity: 50%;
 }

@@ -1,0 +1,159 @@
+.games__wrap {
+  background-color: $bg-accent-color;
+  margin: 25px auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: 60px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 101px auto;
+  }
+}
+
+.games__description {
+  display: grid;
+  grid-template-columns: 117px 56px;
+  column-gap: 37px;
+  row-gap: 16px;
+  padding: 40px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 100px 100px;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 168px 95px;
+    column-gap: 77px;
+    row-gap: 29px;
+    padding: 61px 80px 98px 80px;
+  }
+}
+
+.games__title {
+  font-size: 48px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: $bg-base-color;
+  text-align: left;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 96px;
+  }
+}
+
+.games__subtitle {
+  grid-column: 1 / -1;
+  font-family: $base-font;
+  font-size: 16px;
+  color: $bg-base-color;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    & br {
+      display: none;
+    }
+  }
+}
+
+.games__info {
+  color: $bg-base-color;
+  text-align: left;
+  margin: 0;
+}
+
+.games__info-title {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid $bg-base-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+  }
+}
+
+.games__info-detailes {
+  margin: 2px 0 0 0;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.games__time {
+  display: flex;
+  column-gap: 3px;
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 700;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+}
+
+.games__time-desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    transform: translate(0, 1px);
+  }
+}
+
+.games__button {
+  grid-column: 1 / -1;
+  color: $bg-base-color;
+  border: 2px solid $bg-base-color;
+  padding: 19px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px;
+  }
+}
+
+.games__img {
+  background-color: #010246;
+  height: 100%;
+}

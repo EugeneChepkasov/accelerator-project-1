@@ -4,18 +4,21 @@
 @import "vendor/normalize";
 
 // Общие стили
-@import "common/variables.scss";
+@import "variables.scss";
 @import "common/mixins.scss";
 @import "common/fonts.scss";
 @import "common/global.scss";
+@import "common/page-body.scss";
 @import "common/container.scss";
 @import "common/title.scss";
+@import "common/small-title.scss";
 @import "common/subtitle.scss";
-@import "common/button-link.scss";
+@import "common/button.scss";
 @import "common/visually-hidden.scss";
 
 // Блоки сайта
 @import "blocks/hero.scss";
 @import "blocks/about.scss";
 @import "blocks/video.scss";
-
+@import "blocks/price.scss";
+@import "blocks/games.scss";

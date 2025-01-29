@@ -1,4 +1,4 @@
-.about {
+.about__wrap {
   position: relative;
   @include bloks-padding;
 
@@ -10,13 +10,14 @@
     display: flex;
     flex-direction: row;
     gap: 145px;
-    padding: 120px 0 240px 0;
+    padding-top: 120px;
+    padding-bottom: 207px;
   }
 }
 
 .about__description {
   @media (min-width: $desktop-width) {
-    max-width: 355px;
+    width: 355px;
   }
 }
 
@@ -35,8 +36,9 @@
 }
 
 .about__subtitle {
-  margin-top: 11px;
+  margin: 11px 0 0 0;
   text-align: left;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 19px;
@@ -52,12 +54,16 @@
 .about__img {
   margin: 0 -15px;
 
+  & img {
+    background-color: #808080;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }
 }
 
-.about__text {
+.about__description p {
   margin: 37px 0 35px;
 
   & br {
@@ -68,7 +74,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding: 0 88px;
+    padding: 0 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,7 +84,7 @@
   }
 }
 
-.about__add-text {
+.about__description p + p {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -97,7 +103,7 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     margin: 0;
-    bottom: 157px;
+    bottom: 124px;
     right: 400px;
   }
 }

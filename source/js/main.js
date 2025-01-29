@@ -2,7 +2,8 @@
 // import Swiper from "swiper";
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
-import {videoAboutHandler} from './video.js';
+import {loadVideoOnClick} from './load-video.js';
+import {initPriceTubSwither} from './switch-tabs.js';
 
-
-videoAboutHandler();
+loadVideoOnClick();
+initPriceTubSwither();

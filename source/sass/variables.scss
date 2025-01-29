@@ -1,14 +1,23 @@
 // Цвета
 $base-text-color: #102654;
+$default-text-color: #000000;
 $primary-text-color: #103aae;
+$primary-text-gradient: linear-gradient(128deg, #d10a42 0%, #0041cf 45.58%);
 
 $bg-base-color: #ffffff;
 $bg-primary-color: #f8f9fc;
+$bg-primary-gradient: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+$bg-accent-color: #ed0233;
+
+$price-shadow-color: #e8e8e8;
+$bg-buttons-gradient: linear-gradient(97deg, #ed0233 17.6%, #003Eb7 95.31%);
 
 // Экран
 $mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1366px;
 
-// Шрифт
+// Шрифты
 $base-font: "Roboto Condensed", "Arial", sans-serif;
+$title-font: "Alumni Sans", "Arial", sans-serif;
+
